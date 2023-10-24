@@ -1,0 +1,45 @@
+cmake_minimum_required(VERSION 3.5.0)
+project (Intro)
+
+
+
+
+
+
+
+
+
+# find_package(OpenGL REQUIRED)
+
+# add_subdirectory(lib/adder)
+# add_subdirectory(external/glfw)
+# add_subdirectory(external/glad)
+
+
+add_executable(${PROJECT_NAME} 
+  main.cpp 
+   ${PROJECT_SOURCE_DIR}/src/lab03.cpp
+#   ${PROJECT_SOURCE_DIR}/src/shader.cpp
+#   ${PROJECT_SOURCE_DIR}/src/VAO.cpp
+#   ${PROJECT_SOURCE_DIR}/src/VBO.cpp
+#   ${PROJECT_SOURCE_DIR}/src/EBO.cpp
+)
+
+target_include_directories(${PROJECT_NAME}
+  PUBLIC ${CMAKE_SOURCE_DIR}/include
+#   PUBLIC ${CMAKE_SOURCE_DIR}/lib/adder
+#   PUBLIC ${CMAKE_SOURCE_DIR}/external/glfw/include
+#   PUBLIC ${CMAKE_SOURCE_DIR}/external/glad/include
+)
+
+# target_link_directories(${PROJECT_NAME}
+#   PRIVATE ${CMAKE_SOURCE_DIR}/lib/adder
+#   PRIVATE ${CMAKE_SOURCE_DIR}/external/glfw/src
+#   PRIVATE ${CMAKE_SOURCE_DIR}/external/glad/src
+# )
+
+# target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} adder OpenGL::GL glfw glad)
+
+
+
+
