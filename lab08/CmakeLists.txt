@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.5.0)
 project (Intro)
 
+
 add_executable(${PROJECT_NAME} 
   main.cpp 
-  ${PROJECT_SOURCE_DIR}/src/Vector.cpp
-  ${PROJECT_SOURCE_DIR}/src/ComplexNumber.cpp
+  ${PROJECT_SOURCE_DIR}/src/MapPoint.cpp
 )
 
 target_include_directories(${PROJECT_NAME}
