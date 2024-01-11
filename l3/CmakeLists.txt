@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.5.0)
+project (Intro)
+
+add_executable(${PROJECT_NAME} 
+  main.cpp 
+   ${PROJECT_SOURCE_DIR}/src/cardVerificationUtilities.cpp
+)
+
+target_include_directories(${PROJECT_NAME}
+  PUBLIC ${CMAKE_SOURCE_DIR}/include
+)
+
+add_definitions(-DPROCEED_WITH_VERIFICATION)

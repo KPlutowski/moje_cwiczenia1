@@ -1,6 +1,8 @@
 #include "PointSmartPtr.h"
 Point::Point() : _x(0), _y(0) {}
 
+Point::Point(int x,int y) : _x(x),_y(y) {}
+
 std::ostream &operator<<(std::ostream &os, const Point &point)
 {
     os << '[' << point._x << ',' << point._y << ']';
