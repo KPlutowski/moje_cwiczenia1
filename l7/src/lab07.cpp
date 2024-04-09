@@ -8,7 +8,7 @@ Node::Node(const char* str) :  _prev(nullptr), _next(nullptr)
 
 Node::~Node()
 {
-    delete _data;
+    delete[] _data;
 }
 
 
